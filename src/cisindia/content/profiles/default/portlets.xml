@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="cisindia.content.portlet.megaphone"
+   title="Megaphone Count Portlet"
+   description="Portlet displaying count of megaphone"
+   />
+
+</portlets>
+

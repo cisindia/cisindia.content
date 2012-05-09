@@ -1,0 +1,21 @@
+<configure 
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+   <include package="Products.CMFCore"
+                    file="permissions.zcml"/> 
+
+  <includeDependencies package="." />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="cisindia.content"
+      directory="profiles/default"
+      description="Extension profile for cisindia.content"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <include package=".portlet"/>
+
+</configure>

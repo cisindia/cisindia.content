@@ -1,0 +1,17 @@
+<div tal:define="megaphone view/megaphone">
+    <dl class="portlet">
+      <dt class="portletHeader">Act Now!</dt>
+      <dd class="portletItem">
+      <h3>
+      <a tal:attributes='href megaphone/absolute_url;
+                        alt megaphone/pretty_title_or_id'
+         href="http://cis-india.org/censorship-campaign" 
+         alt="Censorship Campaign">Ask your MP to vote against the Internet Censorship Law on May 11</a>
+      </h3>
+     <img src="http://cis-india.org/internet-governance/campaigns/dont-censor-me-1/image_thumb" alt="Don't Censor Me" />
+     <p>
+     <span style="font-weight: bold; font-size: 14pt;" tal:content="view/count"></span>
+     <span style="font-weight: bold; font-size: 14pt;">emails</span> to MPs have already been sent.
+     </p>
+    </dl>
+</div>
