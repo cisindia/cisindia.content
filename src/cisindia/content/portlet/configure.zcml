@@ -3,6 +3,7 @@
     xmlns:grouplookup="http://namespaces.inigo-tech.com/megaphonegrouplookup"
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:browser="http://namespaces.zope.org/browser">
+    <include package="Products.EasyNewsletter" /> 
 
      <!-- Register the portlet -->
      <plone:portlet
@@ -14,6 +15,16 @@
          addview=".megaphone.AddForm"
          editview=".megaphone.EditForm"
          />
+
+    <plone:portletRenderer
+    portlet="Products.EasyNewsletter.portlets.subscriber.INewsletterSubscriberPortlet"
+    class = ".easynewsletter.Renderer"
+    layer= "cisindia.content.interfaces.IProductSpecific"
+
+
+
+
+    />
 
 
 </configure>
