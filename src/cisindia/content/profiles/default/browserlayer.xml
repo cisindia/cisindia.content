@@ -1,0 +1,4 @@
+<layers>
+    <layer name="cisindia.content"
+        interface="cisindia.content.interfaces.IProductSpecific"/>
+</layers>
